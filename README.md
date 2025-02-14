@@ -11,14 +11,13 @@ $ npm i
 
 Once everything is installed, make sure everything is working by running: 
 ```
-
 $ npm run start
 ```
-This will start the development server. You can view the application in the browser at [http://localhost:3000](http://localhost:3000). You should see a white page that says "Hello Welcome to CoT Alerts!" at the top.
+This will start the development server. You can view the application in the browser at [http://localhost:3000](http://localhost:3000). You should see a white page that says "Welcome to CoT Alerts!" at the top.
 
 ## Expectations
 
-This evaluation is to get a general idea of your coding abilities and styles using React + Typescript and ability to interpret business logic.
+This evaluation is to get a general idea of your coding abilities and styles using React + Typescript.
 
 This is a simple concert ticket alert app. When a user creates an alert they are able to specify quantity and sections, so that they will receive a notification when a matching ticket becomes available.
 
@@ -26,12 +25,14 @@ In this example project, the alerts are already created in the mock api and can 
 
 ## Requirements
 
-* Please create at least one component. You may componentize more granularly as you see fit.
 * Please use typescript
 * Please store the alerts somewhere they can be accessed from another component (eg. React Context api. You are welcome to install another state-management library if you're more comfortable)
+* The alerts should look like the examples below. No need to get them perfect but the layout should look close enough.
+* Display the alerts list in the center of the screen. The alerts should never be wider than 500px.
+* Please optimize for mobile viewing as well as desktop.
 * Please format the event date correctly. `dayjs` is installed in this project.
 * Please make sure the details bubble at the bottom accurately represents both the *quantity* and *sections* that a user would like to receive alerts for.
-* Please include a "Load More" button at the bottom to fetch 20 more alerts, and append them to the existing alert list. You don't have to worry about passing offset or limit in this example.
+* Please include a "Load More" button at the bottom to fetch 20 more alerts, and add them to the existing alert list.
 * Please account for error handling.
 
 ## Keep in Mind
@@ -45,15 +46,11 @@ Focus on handling the different states that an alert might get returned in:
 * `reserved` can also be `true` with a list of `ga_sections`
 
 
-## Alert Images
+## Example Alerts
 <img width="600" alt="Alert Example 1" src="https://www.dropbox.com/scl/fi/y45lbaj6uqyu85vkitpws/alert-1.png?rlkey=9ghv63s7w9ujunihaba56ad24&raw=1">
 <img width="600" alt="Alert Example 2" src="https://www.dropbox.com/scl/fi/jwcpbl12fwqwd7bk5dw7n/alert-2.png?rlkey=rnbg7enke5x9s89nw00i7h5u2&raw=1">
 
 ## Styling The App
 
-If you'd like you can just add all the css in the `App.css` file. If you want to orginize it differently or use the css modules pattern that's fine too. Please make the alert look like the example images above. No need to get the padding/spacing perfect but it should look close.
-
-## Code Of Conduct
-
-This is an open book evaluation. We don't expect you to have everything memorized, use the internet! Please, be honest with your submissions. If you feel like your're doing someting questionable you probably are, so don't :)
+If you'd like you can just add all the css in the `App.css` file. If you want to orginize it differently or use the css modules pattern that's fine too.
 
