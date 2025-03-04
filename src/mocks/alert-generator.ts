@@ -14,7 +14,7 @@ export function* alertGenerator() {
         start: faker.date.soon(),
         image: faker.image.imageUrl(640, 320, "cat", true),
         end,
-        venue_name: faker.science.chemicalElement(),
+        venue_name: faker.science.chemicalElement()?.name,
         city: faker.address.city(),
         state: faker.address.stateAbbr()
       },
